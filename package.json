@@ -1,0 +1,29 @@
+{
+  "name": "css-dimension-utilities",
+  "version": "0.0.1",
+  "homepage": "http://github.com/mrmrs/css-dimension-utilities",
+  "description": "Css module of single purpose classes for dimension utilities",
+  "keywords": [
+    "css",
+    "oocss",
+    "",
+    ""
+  ],
+  "css-dimension-utilities": {
+    "type": "git",
+    "url": "http://github.com/mrmrs/css-dimension-utilities.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrmrs/repo/issues",
+    "email": "hi@mrmrs.cc"
+  },
+  "author": {
+    "name": "Adam Morse",
+    "email": "hi@mrmrs.cc",
+    "url": "http://mrmrs.cc"
+  },
+  "contributors": [
+    { "name": "Adam Morse", "email": "hi@mrmrs.cc" }
+  ],
+  "license": "MIT"
+}
