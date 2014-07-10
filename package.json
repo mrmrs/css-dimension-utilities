@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "dimension-utilities"
   ],
   "css-dimension-utilities": {
     "type": "git",
