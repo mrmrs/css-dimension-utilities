@@ -1,12 +1,5 @@
 # CSS DIMENSION UTILITIES
 
-  Mobile-first classes for css-dimension-utilities.
-  Set the desired css-dimension-utilities on any element for any breakpoint.
-  Base class names are namespaced across three breakpoints:
-
-*  -ns = not-small (covers everything larger than mobile)
-*  -m  = medium
-*  -l  = large
 
 ## Install
 ```
