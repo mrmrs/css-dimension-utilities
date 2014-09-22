@@ -2,13 +2,18 @@
 
 
 ## Install
+Grab the css partial from github and include it in your project or alternatively
+you can install it via npm:
 ```
 npm install --save-dev css-dimension-utilities
 ```
-or download the css on github and include in your project.
+View on [npm](https://www.npmjs.org/package/css-dimension-utilities)
+
 
 ## File Size
 
+181B dimension-utilities.css
+109B dimension-utilities.min.css
 
 ## The Code
 ```
