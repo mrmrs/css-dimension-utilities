@@ -13,7 +13,8 @@ View on [npm](https://www.npmjs.org/package/css-dimension-utilities)
 ## File Size
 
 181B dimension-utilities.css
-109B dimension-utilities.min.css
+109B dimension-utilities.min.css 
+95B minified and gzipped
 
 ## The Code
 ```
