@@ -1,67 +1,83 @@
-# CSS DIMENSION UTILITIES
+# css-dimension-utilities 0.0.7
 
+Css module of single purpose classes for dimension utilities
 
-## Install
-Grab the css partial from github and include it in your project or alternatively
-you can install it via npm:
+#### Stats
+
+124 | 3 | 7
+---|---|---
+bytes | selectors | declarations
+
+## Installation
+
+#### With [npm](https://npmjs.com)
+
 ```
 npm install --save-dev css-dimension-utilities
 ```
-View on [npm](https://www.npmjs.org/package/css-dimension-utilities)
 
-
-## File Size
-
-181B dimension-utilities.css
-109B dimension-utilities.min.css
-95B minified and gzipped
-
-## The Code
-```
-.wrap {
-  display: block;
-  width: auto;
-}
-
-.fill {
-  display: block;
-  overflow: hidden;
-  width: auto;
-}
-
-.dbf {
-  display: block;
-  width: 100%;
-}
+#### With Git
 
 ```
+git clone https://github.com/tachyons-css/css-dimension-utilities
+```
 
-## Author
+## Usage
 
-[http://mrmrs.cc - Entire internet gateway to all things mrmrs](http://mrmrs.cc)
-[http://mrmrs.io - Open source projects](http://mrmrs.io)
+#### Using with [PostCSS](https://github.com/postcss/postcss)
+
+Import the css module
+
+```css
+@import "css-dimension-utilities";
+```
+
+Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+
+```sh
+$ npm i -g tachyons-cli
+$ tachyons-cli path/to/css-file.css > dist/t.css
+```
+
+#### Using the CSS
+
+The built CSS is located in the `css` directory. It contains an unminified and minified version.
+You can either cut and paste that css or link to it directly in your html.
+
+```html
+<link rel="stylesheet" href="path/to/module/css/css-dimension-utilities">
+```
+
+#### Development
+
+The source CSS files can be found in the `src` directory.
+Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+
+## The CSS
+
+```css
+/*
+   DIMENSION UTILITIES
+*/
+.wrap { display: block; width: auto; }
+.fill { display: block; overflow: hidden; width: auto; }
+.dbf { display: block; width: 100%; }
+```
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Authors
+
+* [mrmrs](http://mrmrs.io)
+* [johno](http://johnotander.com)
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 @mrmrs
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+MIT
 
