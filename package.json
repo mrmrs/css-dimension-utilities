@@ -1,7 +1,7 @@
 {
   "name": "css-dimension-utilities",
   "style": "dimension-utilities.css",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "http://github.com/mrmrs/css-dimension-utilities",
   "description": "Css module of single purpose classes for dimension utilities",
   "keywords": [
