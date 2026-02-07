@@ -1,2 +1,1 @@
-.fill,.wrap{display:block;width:auto}.fill{overflow:hidden}.dbf{display:block;width:100%}
-
+.wrap{width:auto;display:block}.fill{width:auto;display:block;overflow:hidden}.dbf{width:100%;display:block}
