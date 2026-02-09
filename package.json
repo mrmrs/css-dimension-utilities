@@ -1,38 +1,44 @@
 {
   "name": "css-dimension-utilities",
-  "style": "dimension-utilities.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-dimension-utilities",
-  "description": "Css module of single purpose classes for dimension utilities",
+  "version": "2.0.0",
+  "description": "Functional CSS for dimension-utilities",
+  "style": "dist/dimension-utilities.css",
+  "main": "dist/dimension-utilities.css",
+  "exports": {
+    ".": "./dist/dimension-utilities.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "dimension-utilities"
+    "dimension-utilities",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-dimension-utilities": {
+  "homepage": "https://github.com/mrmrs/css-dimension-utilities",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-dimension-utilities.git"
+    "url": "https://github.com/mrmrs/css-dimension-utilities.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-dimension-utilities/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-dimension-utilities/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
