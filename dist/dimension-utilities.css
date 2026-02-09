@@ -1,20 +1,15 @@
-/*
-   DIMENSION UTILITIES
-*/
-
 .wrap {
-  display: block;
   width: auto;
+  display: block;
 }
 
 .fill {
+  width: auto;
   display: block;
   overflow: hidden;
-  width: auto;
 }
 
 .dbf {
-  display: block;
   width: 100%;
+  display: block;
 }
-
