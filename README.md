@@ -1,101 +1,71 @@
-# css-dimension-utilities 1.0.6
+# css-dimension-utilities
 
-Css module of single purpose classes for dimension utilities
+Functional CSS for dimension-utilities
 
-#### Stats
+## Filesize
 
-124 | 3 | 7
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/dimension-utilities.css` | 150 bytes |
+| `dist/dimension-utilities.min.css` | 108 bytes (87 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-dimension-utilities
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-dimension-utilities
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-dimension-utilities.git
+```sh
+npm install css-dimension-utilities
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-dimension-utilities";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-dimension-utilities@1.0.6/css/css-dimension-utilities.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-dimension-utilities">
+<link rel="stylesheet" href="https://unpkg.com/css-dimension-utilities/dist/dimension-utilities.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   DIMENSION UTILITIES
-*/
-.wrap { display: block; width: auto; }
-.fill { display: block; overflow: hidden; width: auto; }
-.dbf { display: block; width: 100%; }
+```html
+<link rel="stylesheet" href="path/to/css-dimension-utilities/dist/dimension-utilities.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.wrap` | `width: auto;   display: block;` |
+| `.fill` | `width: auto;   display: block;   overflow: hidden;` |
+| `.dbf` | `width: 100%;   display: block;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.wrap-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/dimension-utilities.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/dimension-utilities.css` — formatted
+- `dist/dimension-utilities.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
